@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    restart: always
+    build: .
+    command: bash -c "cd /angular2-registration-login-example/angular_registration/ && npm start"
+    volumes:
+      - .:/angular2-registration-login-example
+      - /angular2-registration-login-example/angular_registration/node_modules
+    ports:
+      - "3000:3000"
