@@ -37,6 +37,10 @@ typings
 # Optional REPL history
 .node_repl_history
 
-# Generated files
-app/**/*.js
-app/**/*.js.map
+# Output of 'npm pack'
+*.tgz
+
+system-config.js*
+*.swp
+angular_registration/**/*.js
+angular_registration/**/*.map
